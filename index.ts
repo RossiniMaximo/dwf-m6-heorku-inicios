@@ -8,7 +8,7 @@ app.get("/hola", (req, res) => {
     });
 });
 
-process.env.NODE_ENV = "Developmentt"
+process.env.NODE_ENV = "Development"
 
 app.get("/env", (req, res) => {
     res.json({
@@ -16,6 +16,6 @@ app.get("/env", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Hola soy express" + port);
 });
