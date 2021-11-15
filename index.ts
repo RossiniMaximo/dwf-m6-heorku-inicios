@@ -15,11 +15,11 @@ app.get("/env", (req, res) => {
     });
 });
 
-process.env.FULLNAME = "Maximo Rossini";
+process.env.FULL_NAME = "Maximo Rossini";
 
 app.get("/name", (req, res) => {
     res.json({
-        environment: process.env.FULLNAME,
+        environment: process.env.FULL_NAME,
     });
 });
 
