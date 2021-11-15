@@ -15,7 +15,6 @@ app.get("/env", (req, res) => {
     });
 });
 
-process.env.FULL_NAME = "Maximo Rossini";
 
 app.get("/name", (req, res) => {
     res.json({
