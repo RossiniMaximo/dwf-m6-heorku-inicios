@@ -15,6 +15,14 @@ app.get("/env", (req, res) => {
     });
 });
 
+process.env.FULLNAME = "Maximo Rossini";
+
+app.get("/name", (req, res) => {
+    res.json({
+        environment: process.env.FULLNAME,
+    });
+});
+
 app.listen(port, () => {
     console.log("Hola soy express" + port);
 });
