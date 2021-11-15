@@ -8,7 +8,6 @@ app.get("/hola", (req, res) => {
     });
 });
 
-process.env.NODE_ENV = "Development"
 
 app.get("/env", (req, res) => {
     res.json({
